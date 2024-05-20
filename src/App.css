@@ -1,0 +1,63 @@
+/* src/Components/CounterApp.css */
+
+.counter-app {
+  text-align: center;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f0f0f0;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.counter {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.button-group {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.button-group button {
+  font-size: 18px;
+  cursor: pointer;
+  border: 2px solid black;
+  padding: 10px 20px;
+  margin: 0 10px;
+  background-color: white;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+  border-radius: 5px;
+}
+
+.button-group button:hover {
+  background-color: black;
+  color: white;
+  transform: scale(1.1);
+}
+
+.button-group button:active {
+  transform: scale(0.9);
+}
+
+@media (max-width: 600px) {
+  .counter-app {
+      width: 90%;
+      top: 10%;
+      padding: 20px;
+  }
+
+  .button-group {
+      flex-direction: column;
+  }
+
+  .button-group button {
+      margin: 10px 0;
+  }
+}
